@@ -1,5 +1,1 @@
-# victor-ruiz-tercera-entrega
-
-Link display en Heroku
-
-https://victor-ruiz-tercer-entrega.herokuapp.com/
+Faltan agregar mas controllers
