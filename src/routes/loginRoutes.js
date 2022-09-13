@@ -4,9 +4,7 @@ import { loginAuth, loginView, loginViewFailure } from "../controllers/loginCont
 const loginRouter = Router();
 
 loginRouter.get("/", loginView);
-
 loginRouter.post("/",loginAuth) 
-
 loginRouter.get("/loginFailure",loginViewFailure);
 
 export default loginRouter;

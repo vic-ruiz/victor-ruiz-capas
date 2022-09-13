@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-//import cartRouter from "./cartRoutes";
+import cartRouter from "./cartRoutes";
 import registerRouter from "./registerRoutes.js";
 import loginRouter from "./loginRoutes.js";
 import mainRouter from "./mainRoutes.js";
@@ -15,6 +15,7 @@ router.use('/register', registerRouter);
 router.use('/login', loginRouter);
 router.use('/index', mainRouter );
 router.use ('/products', productsRouter)
+router.use ('/cart', cartRouter)
 router.use('/logout', logoutRouter )
 router.use('/mailConfirmation',mailRouter )
 
