@@ -1,6 +1,5 @@
 import { Router } from "express";
 
-//import productsRouter from "./productsRoutes";
 //import cartRouter from "./cartRoutes";
 import registerRouter from "./registerRoutes.js";
 import loginRouter from "./loginRoutes.js";

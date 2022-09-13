@@ -1,18 +1,11 @@
 import { Router } from "express";
-import passport from "passport";
-import { registerView, registerFailure } from "../controllers/registerController.js";
+import { registerView, registerFailure, registerAuth } from "../controllers/registerController.js";
 
 const registerRouter = Router();
 
 registerRouter.get("/", registerView);
 
-registerRouter.post(
-  "/",
-  passport.authenticate("register", {
-    failureRedirect: "/register/registerFailure",
-    successRedirect: "/mailConfirmation/register",
-  })
-);
+registerRouter.post("/",registerAuth);
 
 registerRouter.get("/registerFailure", registerFailure );
 
